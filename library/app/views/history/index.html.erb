@@ -1,0 +1,12 @@
+<h1>History#index</h1>
+<p>Find me in app/views/history/index.html.erb</p>
+
+
+<% @people.each do |person| %>
+  <h3><%= person.name %></h3>
+  <ul>
+    <% person.books.each do |book| %>
+      <li><%= book.name %></li>
+    <% end %>
+  </ul>
+<% end %>
