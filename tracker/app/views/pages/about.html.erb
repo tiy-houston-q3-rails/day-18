@@ -1,0 +1,12 @@
+<h1>Thanks for everything!</h1>
+
+<h3>You can see more information about: </h3>
+
+<ul class="list-inline">
+  <li><%= link_to "rails", about_path(info: 'rails') , class: "btn btn-large btn-primary"%> </li>
+  <li><%= link_to "bananas", about_path(info: 'bananas'), class: "btn btn-large btn-primary" %></li>
+  <li><%= link_to "dates", about_path(info: 'dates'), class: "btn btn-large btn-primary" %></li>
+</ul>
+
+
+<%= @message %>
